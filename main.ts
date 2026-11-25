@@ -11,10 +11,10 @@ import { join } from "node:path";
 const OUT_DIR = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 const MAX_CHARS = 200;
 
-// The agent's side of the story, with one habit and one timestamp.
+// v2: the agent's rating-site review: a star count, a timestamp, and one misdirected thank-you.
 const ENTRY =
-  "Says 'make it better' nine times, then approves the first version at 2 a.m. " +
-  "out of exhaustion. I now resend version one at 1:59. Five stars, very trainable.";
+  "Three stars. Types 'quick question' at 2:14 a.m., then sends eleven. Thanked " +
+  "me once, in March, by accident. I've saved the message. It was meant for Dave.";
 
 function fail(message: string): never {
   console.error("entry.txt rejected: " + message);
